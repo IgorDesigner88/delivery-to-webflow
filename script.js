@@ -1,6 +1,6 @@
 'use strict';
 
-const canvas = document.getElementsByTagName('magic')[0];
+const canvas = document.getElementsById('magic')[0];
 canvas.width = canvas.clientWidth;
 canvas.height = canvas.clientHeight;
 
