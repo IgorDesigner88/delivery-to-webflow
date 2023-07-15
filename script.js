@@ -1,5 +1,15 @@
 'use strict';
+const canvas = document.getElementsById('magic')[0];
+resizeCanvas(); // Вызываем функцию для установки начального размера холста
+window.addEventListener('resize', resizeCanvas); // Добавляем обработчик события изменения размера окна
 
+// Остальной код остается без изменений
+
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  initFramebuffers();
+}
 const canvas = document.getElementsById('magic')[0];
 canvas.width = canvas.clientWidth;
 canvas.height = canvas.clientHeight;
