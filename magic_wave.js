@@ -642,7 +642,7 @@ canvas.addEventListener('touchmove', e => {
 
 canvas.addEventListener('mousemove', () => {
   pointers[0].down = true;
-  pointers[0].color = [Math.random() + 0.5, Math.random() + 0.5, Math.random() + 0.5];
+  pointers[0].color = [Math.random() + 0.2, Math.random() + 0.2, Math.random() + 0.2];
 });
 
 canvas.addEventListener('touchstart', e => {
@@ -656,7 +656,7 @@ canvas.addEventListener('touchstart', e => {
     pointers[i].down = true;
     pointers[i].x = touches[i].pageX;
     pointers[i].y = touches[i].pageY;
-    pointers[i].color = [Math.random() + 0.5, Math.random() + 0.5, Math.random() + 0.5];
+    pointers[i].color = [Math.random() + 0.2, Math.random() + 0.2, Math.random() + 0.2];
   }
 });
 
