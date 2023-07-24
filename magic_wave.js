@@ -642,7 +642,7 @@ canvas.addEventListener('touchmove', e => {
 
 canvas.addEventListener('mousemove', () => {
   pointers[0].down = true;
-  pointers[0].color = [Math.random() + 0.2, Math.random() + 0.2, Math.random() + 0.2];
+  pointers[0].color = [Math.random() + 0.5, Math.random() + 0.5, Math.random() + 0.5];
 });
 
 canvas.addEventListener('touchstart', e => {
