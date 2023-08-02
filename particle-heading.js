@@ -97,11 +97,11 @@ class CreateParticles {
 
 		this.data = {
 
-			text: 'Привет МИР',
+			text: 'ПРИВЕТ!',
 			amount: 1500,
 			particleSize: 1,
 			particleColor: 0xffffff,
-			textSize: 12,
+			textSize: 16,
 			area: 250,
 			ease: .05,
 		}
