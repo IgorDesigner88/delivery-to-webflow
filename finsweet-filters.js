@@ -18,7 +18,18 @@ $(".filter-button").click(function () {
   }, 500);
 });
 
-
+//Update item count on filter reset
+$(".filter-reset-main").click(function () {
+  setTimeout(function () {
+    var allElems = document.getElementsByClassName("Collection-Item-12");
+    var count = 0;
+    for (var i = 0; i < allElems.length; i++) {
+      var thisElem = allElems[i];
+      if (thisElem.style.display != "none") count++;
+      document.getElementById("item-count").innerHTML = count;
+    }
+  }, 500);
+});
 
 // F'in sweet CMS Library for Webflow
 
