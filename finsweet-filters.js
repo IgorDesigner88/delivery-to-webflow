@@ -1,14 +1,14 @@
 // Counting the number of items returned after the filter function
 var Webflow = Webflow || [];
 Webflow.push(function () {
-  let itemCount = $(".Collection-Item-12").length;
+  let itemCount = $(".Collection-Item-1").length;
   $("#item-count").html(itemCount);
 });
 
 //Update item count on filter change
 $(".filter-button").click(function () {
   setTimeout(function () {
-    var allElems = document.getElementsByClassName("Collection-Item-12");
+    var allElems = document.getElementsByClassName("Collection-Item-1");
     var count = 0;
     for (var i = 0; i < allElems.length; i++) {
       var thisElem = allElems[i];
@@ -21,7 +21,7 @@ $(".filter-button").click(function () {
 //Update item count on filter reset
 $(".filter-reset-main").click(function () {
   setTimeout(function () {
-    var allElems = document.getElementsByClassName("Collection-Item-12");
+    var allElems = document.getElementsByClassName("Collection-Item-1");
     var count = 0;
     for (var i = 0; i < allElems.length; i++) {
       var thisElem = allElems[i];
@@ -34,11 +34,11 @@ $(".filter-reset-main").click(function () {
 // F'in sweet CMS Library for Webflow
 
 (function () {
-  var fsComponent = new FsLibrary(".Collection-List-Team");
+  var fsComponent = new FsLibrary(".Collection-List-Team1");
 
   var myFilters = [
     {
-      filterWrapper: ".filters_team_items",
+      filterWrapper: ".filters_team_items1",
       filterType: "multi",
     },
   ];
